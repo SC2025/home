@@ -3,7 +3,7 @@ setTimeout(() => {
   alert(`प्रोड्कट आर्डर साठी फोटो खालील ब्लॅक कलर चे बटन आहेत ;
     तुम्हाला कोणत्या साईझ चा प्रोड्कट घेयचा आहे त्या नुसार त्या 
     बटन ला क्लिक करा`)
-}, 9000);
+}, 5000);
 
   //pree order id
   function ORDER_ID_PREE() {
@@ -83,7 +83,7 @@ for(let i = 0; i<button.length; i++){
   button[i].addEventListener("click",function () {
  
       document.getElementById("product_price_result").innerHTML = this.value;
-      document.getElementById("product_name_result").innerHTML = this.innerHTML;
+      document.getElementById("product_name_result").innerText = this.innerText;
   
 
       document.getElementById("all_pro_page").remove();
@@ -201,12 +201,10 @@ var str = whatsappno_rewrite_p.value
 
   //name and address detail
   document.getElementById("name_and_address_sumury").innerText = 
-  `
-   ${name_p.value}.__
+   `${name_p.value}.__
 ${city_city_p.value}.__
 ${fulladdress_p.value}.__
-mobail no- ${n_1+"--"+n_2+"--"+n_3+"--"+n_4+"--"+n_5}.
-  `
+mobail no- ${n_1+"--"+n_2+"--"+n_3+"--"+n_4+"--"+n_5}.`
 
 
 
@@ -222,10 +220,14 @@ var selectElement_prod_quantitye = product_quntity_P;
 var transport_charge = 30;
   document.getElementById("final_bill").innerText = 
 `FINAL BILL :-
-product name= ${product_name.innerHTML}.
+product name= ${product_name.innerText}.
+
 discount :- 20 %.
+
 1 COMBO product price = ${product_price.innerHTML} RS.
+
 quantity = ${selectpro_quntity} SET.
+
 transport charges = 30 RS (1 SET).
 
 BILL = product price x quantity (ADD) transport charges x quantity.`;
@@ -249,7 +251,7 @@ setTimeout(() => {
   alert(`${name_p.value}
   ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS पेमेंट करण्यासाठी कोणत्याही पेमेंट अँप ने हा QR कोड स्कॅन करा आणि पेमेंट पूर्ण झाल्यांनतर ट्रान्झॅक्शन आयडीचे शेवटचे 4 अंक लिहा
   `)
-}, 8000);
+}, 6000);
 }
 //CHACK MARK
 document.getElementById("chak_mark").innerHTML = `वरील सर्व माहिती मी काळजीपूर्वक भरली आहे .मी ${name_p.value} मला सर्व अटी आणि नियम मान्य आहेत.`
@@ -403,7 +405,7 @@ else{
 
   +  document.getElementById("name_and_address_sumury").innerText + "%0a"+ "%0a" 
 
-  + product_name.innerHTML  + "%0a" + "%0a" 
+  + product_name.innerText  + "%0a" + "%0a" 
 
   +document.getElementById("finanl_amount").innerHTML + "%0a"  + "%0a" 
 
