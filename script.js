@@ -1,523 +1,523 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
 
-</head>
-<body>
 
-<div id="all_pro_page">
+setInterval(() => {
+  document.getElementById("product-quntity").style.backgroundColor = "red";
 
+}, 1000);
 
-                    <div class="a">
-                      <div>
-                        <div class="slideshow-container">
+setInterval(() => {
+  document.getElementById("product-quntity").style.backgroundColor = "black";
 
-                          <div class="mySlidesH1 fade">
-                            <div class="numbertext">1</div>
-                            <img src="H1B.jpeg" alt="h1">
-                            <div class="text">Sample 1</div>
-                          </div>
-                          
-                          <div class="mySlidesH1 fade">
-                            <div class="numbertext">2</div>
-                            <img src="H1C.jpeg" alt="h1">
-                            <div class="text">sample 2</div>
-                          </div>
-                          
-                          <div class="mySlidesH1 fade">
-                            <div class="numbertext">3</div>
-                            <img src="H1A.jpeg" alt="h1">
-                            <div class="text">Sample 3</div>
-                          </div>
-              
-                          <div class="mySlidesH1 fade">
-                              <div class="numbertext">4</div>
-                              <img src="H1D.jpeg" alt="h1">
-                              <div class="text">Sample 4</div>
-                            </div>
-                          
-                            <div class="mySlidesH1 fade">
-                              <div class="numbertext">5</div>
-                              <img src="H1E.jpeg" alt="h1">
-                              <div class="text">Sample 5</div>
-                            </div>
-                          </div>
-                          <div style="text-align:center">
-                              <span class="dotH1"></span> 
-                              <span class="dotH1"></span> 
-                              <span class="dotH1"></span> 
-                              <span class="dotH1"></span> 
-                              <span class="dotH1"></span>
-                            </div>
-                      </div>
 
-                      <!-- PRODCT INFORMATION -->
-                      <DIV class="PRODCT_INFORMATION">
-                      <P><S class="M_price">180 RS </S>= 119 RS</P>
-                    
-                   <button class="btn" value="119" name="1234567">
-                    single bed 1 bedsheet + 1 pillow cover__
-                    <br>
-                    (1 PIECE = 119 RS )__
-                    <br>
-                    (1 PIECES COMBO = 119 RS)
-                  </button>     
-                </DIV>
+}, 2000);           
 
+setInterval(() => {
+  document.getElementById("Payment_gatway1").style.backgroundColor = "rgb(255, 55, 0)";
+  document.getElementById("Payment_gatway2").style.backgroundColor = "rgb(255, 55, 0)";
+  document.getElementById("Payment_gatway1").style.color = "white";
+  document.getElementById("Payment_gatway2").style.color = "white";
+  document.getElementById("finanl_amount").style.backgroundColor = "WHITE";
+  document.getElementById("finanl_amount").style.color = "black";
+  document.getElementById("finanl_amount").style.border = "2PX SOLID black";
 
-                <DIV class="PRODCT_INFORMATION">
-                  <P><S class="M_price">350 RS </S>= 269 RS</P>
-                
-               <button class="btn" value="269">
-              duble bed 1 bedsheet + 2 pillow cover__
-              <br>
-                (1 PIECE = 269 RS )__
-                <br>
-              (1 PIECES COMBO = 269 RS)
-              </button> 
-                    
-            </DIV>
-                  </div>
-                    
+}, 1000);
 
+setInterval(() => {
+  document.getElementById("Payment_gatway1").style.backgroundColor = "black";
+  document.getElementById("Payment_gatway2").style.backgroundColor = "black";
+  document.getElementById("Payment_gatway1").style.color = "white";
+  document.getElementById("Payment_gatway2").style.color = "white";
+  document.getElementById("finanl_amount").style.backgroundColor = "black";
+  document.getElementById("finanl_amount").style.color = "white";
+}, 2000);
 
 
 
+setTimeout(() => {
+  alert(`प्रोड्कट आर्डर साठी फोटो खालील ब्लॅक कलर चे बटन आहेत ;
+    तुम्हाला कोणत्या साईझ चा प्रोड्कट घेयचा आहे त्या नुसार त्या 
+    बटन ला क्लिक करा`)
+}, 5000);
 
-                  <div class="a">
-                    <div>
-                      <img src="H2.jpeg" alt="H2">
-                    </div>
-                    <!-- PRODCT INFORMATION -->
-                    <DIV class="PRODCT_INFORMATION">
-                    <P><S class="M_price">80 RS</S> = 34 RS</P>
-                  
-                 <button class="btn" value="78">
-                  Door Mat ( 2 pieces Combo )__
-                  <br>
-                  (1 PIECE = 34 RS )__
-                  <br>
-                  (2 PIECES COMBO = 78 RS)
-                </button>     
-                </DIV>
-                
-                
-                
-                </div>
+  //pree order id
+  function ORDER_ID_PREE() {
+      myDate = new Date
+            var hours = myDate.getHours(); 
+            hours = hours % 24; 
+            hours = hours ? hours : 24; 
+            var minutes = myDate.getMinutes(); 
+            minutes = minutes < 10 ? '0' + minutes : minutes; 
+            var myTime = "सह्याद्री-" + minutes + hours + "-"
+            document.getElementById("pree_id").innerHTML = myTime
+          };  
+          ORDER_ID_PREE()
 
-
-
-                <div class="a">
-
-                  <div>
-                    <img src="H3.jpg" alt="H3">
-                  </div>
-
-                  <!-- PRODCT INFORMATION -->
-                  <DIV class="PRODCT_INFORMATION">
-                  <P><S class="M_price">20 RS</S> = 15 RS</P>
-                
-               <button class="btn" value="40">
-                Chapati / kitchen  Napkins__
-                <br>
-                (1 PIECE = 15 RS )__
-                <br>
-                (5 PIECES COMBO = 40 RS)
-              </button>     
-              </DIV>
-              </div>
-
-
-
-
-
-              <div class="a">
-
-                <div>
-                  <img src="H5.jpg" alt="H5">
-                </div>
-                <!-- PRODCT INFORMATION -->
-                <DIV class="PRODCT_INFORMATION">
-                <P><S class="M_price">20 RS</S> = 10 RS</P>
-              
-             <button class="btn" value="50">
-              Small Napkins__
-              <br>
-              (1 PIECE = 10 RS )__
-              <br>
-              (5 PIECES COMBO = 50 RS)
-            </button>     
-            </DIV>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-              <div class="a">
-
-                <div>
-                  <img src="H6.jpg" alt="H6">
-                </div>
-                <!-- PRODCT INFORMATION -->
-                <DIV class="PRODCT_INFORMATION">
-                <P><S class="M_price">30 RS</S> = 13 RS</P>
-              
-             <button class="btn" value="65" >
-              big Napkins__
-              <br>
-              (1 PIECE = 13 RS )__
-              <br>
-              (5 PIECES COMBO = 65 RS)
-            </button>     
-            </DIV>
-            </div>
-
- </div>
-
-
-
-<!-- JS PART OF PAY PAGE -->
-<div>
-
-  <div class="opacity_0">
-
-    <div id="pree_id"></div>
-    <div id="last_id"></div>
-    <div id="final_id"></div>
-    <DIV id="today_date"></DIV>
-    <div id="order_del_date"></div>
-    <div id="product_price_result"></div>
-    <div id="product_col">123</div>
-  </div>
-
-<div id="pp_div_1">
-
-
-  <div class="product_name_col" id="product_name_result"></div>
-
-  <P>Select product quantity :-
-    <select name="" id="product-quntity">
-        <option value="1">1 SET</option>
-        <option value="2">2 SET</option>
-        <option value="3">3 SET</option>
-    </select>
-  <p>नाव :- <input id="name_result" type="text"></p>
-
-  <p  >गाव निवडा :- 
-    <select name=""  id="addres_result">
-    <option value="rahimatpur">Rahimatpur</option>
-    <option value="boriv">Boriv</option>
-    <option value="Naharwadi">Naharwadi</option>
-    <option value="Other">Other</option>
-    </select>
-
-   <p >संपूर्ण पत्ता लिहा :- 
-   <input id="address_full_result" type="text">
-   </p>
-
-   <p id="mobnopara">व्हॉट्सॲप मोबाईल नंबर :- <input id="mobno_result" type="number"></p></p>
-  
-   <p>वरील मोबाईल नंबर पुन्हा लिहा:- 
-    <button id="mobbtn">
-     <input id="mobnover_result" type="number">
-   </button>
-  </p>
-<BR></BR>
-  <button  class="button" id="secA_btn">view order summary</summary></button>
-
-
-
-</div>
-
-<div id="pp_div_2">
-<div id="L&j&p_DIV">
-      
-    <div id="LEGGINS">
-    <div class="heding">select your leggins colour</div>
-    <BR>
-      <img src="colour_leggins.png" alt="">
-<DIV id="L_1">Select 1st leegins  colour</DIV>
-<select id="leggise_1">
-       <option value="">BLACK colour</option>
-      <option value="">WHITE  colour</option>
-  
-      <option value="">RED  colour</option>
-      <option value="">dark RED colour</option>
-  
-       
-      <option value="">NAVY BLUE colour</option>
-      <option value="">ORANGE colour</option>
-  
-      <option value="">GREEN colour</option>
-      <option value="">SKIN colour</option>
-  
-      <option value="">PINK  colour</option>
-      <option value="">dark PINK colour</option>
-  
-      <option value="">BLUE colour</option>
-      <option value="">dark BLUE colour</option>
-  
-      <option value="">CREAM colour</option>
-      <option value="">dark CREAM colour</option>
-  
-      <option value="">SKY BLUE colour</option>
-      <option value="">dark SKY BLUE colour</option>
-  
-      
-      <option value="">YELLOW colour</option>
-      <option value="">MARRON colour</option>
-   
-</select>
-<div id="L_2">Select 2nd leggins colour</div>
-<select id="leggise_2">
-       <option value="">BLACK colour</option>
-      <option value="">WHITE  colour</option>
-  
-      <option value="">RED  colour</option>
-      <option value="">dark RED colour</option>
-  
-       
-      <option value="">NAVY BLUE colour</option>
-      <option value="">ORANGE colour</option>
-  
-      <option value="">GREEN colour</option>
-      <option value="">SKIN colour</option>
-  
-      <option value="">PINK  colour</option>
-      <option value="">dark PINK colour</option>
-  
-      <option value="">BLUE colour</option>
-      <option value="">dark BLUE colour</option>
-  
-      <option value="">CREAM colour</option>
-      <option value="">dark CREAM colour</option>
-  
-      <option value="">SKY BLUE colour</option>
-      <option value="">dark SKY BLUE colour</option>
-  
-      
-      <option value="">YELLOW colour</option>
-      <option value="">MARRON colour</option>
-   
-</select>
-<div id="L_3">आमची टीम तुमच्या निवडलेला कलर देण्याचा 100% प्रयत्न करेल पण जर स्टोरेज मध्ये वरील 2 कलर नसतील तर तुम्ही कोणता कॉलवर घेऊ इच्छिता.</div>
-<select id="leggise_3">
-  <option value="">BLACK colour</option>
- <option value="">WHITE  colour</option>
-
- <option value="">RED  colour</option>
- <option value="">dark RED colour</option>
-
-  
- <option value="">NAVY BLUE colour</option>
- <option value="">ORANGE colour</option>
-
- <option value="">GREEN colour</option>
- <option value="">SKIN colour</option>
-
- <option value="">PINK  colour</option>
- <option value="">dark PINK colour</option>
-
- <option value="">BLUE colour</option>
- <option value="">dark BLUE colour</option>
-
- <option value="">CREAM colour</option>
- <option value="">dark CREAM colour</option>
-
- <option value="">SKY BLUE colour</option>
- <option value="">dark SKY BLUE colour</option>
-
- 
- <option value="">YELLOW colour</option>
- <option value="">MARRON colour</option>
-
-</select>
-
-    </div>
-
-    <div id="JEANS">
-  <div class="heding">select your jeans colour</div>
-  <br>
-<div id="J_1">Select 1st jeans colour</div>
-<select name="" id="jeans_1">
-             <option value="">blue</option>
-             <option value="">grey</option>
-             <option value="">black</option>
-           
-</select>
-
-<div id="J_2">Select 2nd jeans colour</div>  
-<select name="" id="jeans_2">
-  <option value="">blue</option>
-  <option value="">grey</option>
-  <option value="">black</option>
-</select>
-
-<div id="J_3">आमची टीम तुमच्या निवडलेला कलर देण्याचा 100% प्रयत्न करेल पण जर स्टोरेज मध्ये वरील 2 कलर नसतील तर तुम्ही कोणता कॉलवर घेऊ इच्छिता.</div>
-<select name="" id="jeans_3">
-             <option value="">blue</option>
-             <option value="">grey</option>
-             <option value="">black</option>
-
-</select>
-    </div>
-
-    <div id="Petticoat">
-      <div class="heding">select your Petticoat colour</div>
-      <BR>
-          <img src="colour_petticote.png" alt="Petticoat_1_colour">
-  <DIV id="P_1">Select 1st Petticoat colour</DIV>
-
-
-  <select id="Petticoat_1">
-         <option value="">BLACK colour</option>
-        <option value="">WHITE  colour</option>
-        <option value="">RED  colour</option>
-        <option value="">NAVY BLUE colour</option>
-
-        <option value="">ORANGE colour</option>
-        <option value="">GREEN colour</option>
-        <option value="">SKIN colour</option>
-        <option value="">PINK  colour</option>
-
+//next order id
+function ORDER_ID_NEXT(){
     
-        <option value="">BLUE colour</option>
-        <option value="">CREAM colour</option>              
-        <option value="">SKY BLUE colour</option>                  
-        <option value="">YELLOW colour</option>
-        <option value="">MARRON colour</option>
+    // Creating the date instance
+    let d = new Date();
+    
+    // Adding one date to the present date
+    d.setDate(d.getDate() );
+    
+    let year = d.getFullYear()
+    let month = String(d.getMonth() + 1)
+    let day = String(d.getDate())
+    
+    // Adding leading 0 if the day or month
+    // is one digit value
+    month = month.length == 1 ?
+    month.padStart('2', '0') : month;
+    
+    day = day.length == 1 ?
+    day.padStart('2', '0') : day;
+        //PRINTING TODAY DATE
+        document.getElementById("today_date").innerHTML = `${day}.${month}.${year}`;
+console.log(window.location.href);
+       
+        if (window.location.href == "https://sc2025.github.io/man/"
+          || window.location.href == "sc2025.github.io/man/"
+        ) {
+          document.getElementById("last_id").innerHTML = `${month}${year}${day}-M`;
+        }
+      else if (window.location.href == "https://sc2025.github.io/women/"||
+        window.location.href == "sc2025.github.io/women/"
+      ) {
+        document.getElementById("last_id").innerHTML = `${month}${year}${day}-WK`;
+        }
+else if (window.location.href == "https://sc2025.github.io/home/"||
+  window.location.href == "sc2025.github.io/home/"
+) {
+      // Printing the first id and last
+      document.getElementById("last_id").innerHTML = `${month}${year}${day}-H`}
+else(
+  document.getElementById("last_id").innerHTML = `${month}${year}${day}`
+)
+
+
+
+
+  };
+
+    ORDER_ID_NEXT();
+
+        //delivered date 
+        function fifteen_days_after_date(){
+    
+    // Creating the date instance
+    let d = new Date();
+    
+    // Adding one date to the present date
+    d.setDate(d.getDate() + 15);
+   
+    let year = d.getFullYear()
+    let month = String(d.getMonth() + 1)
+    let day = String(d.getDate())
+    
+    // Adding leading 0 if the day or month
+    // is one digit value
+    month = month.length == 1 ?
+    month.padStart('2', '0') : month;
+    
+    day = day.length == 1 ?
+    day.padStart('2', '0') : day;
+
+    // Printing the DELIVERY date
+document.getElementById("order_del_date").innerHTML = `${day}.${month}.${year}`;
+
+   };
+   fifteen_days_after_date();
+document.getElementById("final_id").innerHTML =  document.getElementById("pree_id").innerHTML + document.getElementById("last_id").innerHTML;
+
+
+
+let button = document.querySelectorAll(".btn");
+
+for(let i = 0; i<button.length; i++){
+  button[i].addEventListener("click",function () {
+ 
+      document.getElementById("product_price_result").innerHTML = this.value;
+      document.getElementById("product_name_result").innerText = this.innerText;
+      document.getElementById("product_col").innerHTML = this.name;
+
+      document.getElementById("all_pro_page").remove();
+
+      document.getElementById("pp_div_1").style.opacity = "1";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}topFunction();
+
+
+
+
+
+
+
+    })
+};
+
+
+
+
+var product_name = document.getElementById("product_name_result");
+var product_price = document.getElementById("product_price_result");
+var product_quntity_P = document.getElementById("product-quntity");
+var name_p = document.getElementById("name_result");
+var city_city_p = document.getElementById("addres_result");
+var fulladdress_p = document.getElementById("address_full_result");
+var whatsappno_p = document.getElementById("mobno_result");
+var whatsappno_rewrite_p = document.getElementById("mobnover_result");
+//mob opacity 0
+document.getElementById("mobbtn").addEventListener("click",function() {
+  document.getElementById("mobnopara").style.opacity = "0";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("secA_btn").addEventListener("click",function () {
+
+  if (name_p.value == "") {
+ alert("dear customer कृपया नाव लिहा");
+ name_p.style.backgroundColor = "rgb(239, 118, 118)";
+}
+else if(fulladdress_p.value == ""){
+alert(`${name_p.value}
+कृपया संपूर्ण पत्ता लिहा`);
+fulladdress_p.style.backgroundColor = "rgb(239, 118, 118)";
+}
+else if(city_city_p.value == "Other"){
+    alert(`${name_p.value}
+     तुम्ही Other हा पर्याय  निवडला आहे.
+    सह्याद्री कलेक्शन ची शाखा फक्त ऑपशन मध्ये दिलेल्या गावा मधेच आहे . 
+
+   त्यामुळे त्या गावा मधील ऑपशन निवडा.
+   
+   तुमच्या विश्वासू मित्राचा किंवा नातेवाईकाचा पत्ता द्या.
+
+    "Full detail Address:-" मध्ये पत्ता नीट लिहा जेणे करून आमची टीम तुमचे product घेऊन लवकर येईल`);
+    city_city_p.style.backgroundColor = "rgb(239, 118, 118)";
+}
+else if(whatsappno_p.value == ""){
+alert(
+  `${ name_p.value} 
+कृपया व्हॉट्सॲप चा मोबाईल नंबर लिहा`)
+whatsappno_p.style.backgroundColor = "rgb(239, 118, 118)";
+document.getElementById("mobnopara").style.opacity = "1";
+
+}
+else if(whatsappno_rewrite_p.value == ""){
+  alert(
+  `${ name_p.value}   
+  कृपया व्हॉट्सॲप चा मोबाईल नंबर लिहा`)
+  whatsappno_rewrite_p.style.backgroundColor = "rgb(239, 118, 118)";
+  document.getElementById("mobnopara").style.opacity = "1";
+
+}
+else if(whatsappno_p.value.length != 10){
+alert(
+  `${name_p.value} तुम्ही
+    10 अंकी मोबाईल नंबर एंटर करा 
+    तुम्ही ${whatsappno_p.value.length} अंकी मोबाईल नंबर लिहित आहात 
+    कृपया मोबाईल नंबर तपासा आणि पुन्हा लिहा`);
+    document.getElementById("mobnopara").style.opacity = "1";
+    whatsappno_p.backgroundColor = "rgb(239, 118, 118)";
+  }
+else if(whatsappno_p.value != whatsappno_rewrite_p.value){
+alert(`${name_p.value} 
+आपण ${whatsappno_p.value} आणि ${whatsappno_rewrite_p.value}
+    लिहला आहे;
+    मोबाईल नंबर मॅच होत नाही;
+
+    टीप(कृपया दोन्ही ठिकाणी एकच मोबाईल नंबर लिहा)
+    `);
+    document.getElementById("mobnopara").style.opacity = "1";
+    whatsappno_p.style.backgroundColor = "rgb(239, 118, 118)";
+    whatsappno_rewrite_p.backgroundColor = "rgb(239, 118, 118)";
+      document.getElementById("mobnopara").style.opacity = "1"
+}
+else{
+
+//whatsapp no
+var str = whatsappno_rewrite_p.value
+ var n_1 = str.slice(0,2); 
+ var n_2 = str.slice(2,4);
+ var n_3 = str.slice(4,6);
+ var n_4 = str.slice(6,8);
+ var n_5 = str.slice(8,10);
+
+
+  //name and address detail
+  document.getElementById("name_and_address_sumury").innerText = 
+   `${name_p.value}.__
+${city_city_p.value}.__
+${fulladdress_p.value}.__
+mobail no- ${n_1+"--"+n_2+"--"+n_3+"--"+n_4+"--"+n_5}.`
+
+
+
+
+
+//product Quantity
+var selectElement_prod_quantitye = product_quntity_P;
+  var selectpro_quntity = selectElement_prod_quantitye.value;
+
+
+
+
+
+
+
+
+
+
+
+//final bill
+var transport_charge = 30;
+  document.getElementById("final_bill").innerText = 
+`FINAL BILL :-
+product name=
+${product_name.innerText}.
+
+discount :- 20 %.
+
+product price = ${product_price.innerHTML} RS.
+
+quantity = ${selectpro_quntity} SET.
+
+${selectpro_quntity} SET product price :- ${product_price.innerHTML} RS X ${selectpro_quntity} SET = ${product_price.innerHTML* selectpro_quntity} RS.
+
+transport charges :- 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity} RS.
+
+ `
+
+;
+
+
+document.getElementById("finanl_amount").innerText = 
+`final BILL :- 
+${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${30 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
+
+//qr up and down sms
+document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
+document.getElementById("Payment_gatway2").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
+
+document.getElementById("pp_div_1").remove();
+document.getElementById("pp_div_2").style.opacity = "1";
+
+
+
+//colour 
+      //LEGGIND AND JEAND OPACITY
+      function colour_div_opacoty(){
+        if (document.getElementById("product_col").innerHTML === "col_leggins") {
+          document.getElementById("JEANS").remove();
+        document.getElementById("Petticoat").remove();
+        alert(`${name_p.value}
+        select your leggins colour;
+        `)
+      } 
+      else if(document.getElementById("product_col").innerHTML === "col_jeans")
+      {
+        document.getElementById("LEGGINS").remove();
+        document.getElementById("Petticoat").remove();
+        alert(`${name_p.value}
+        select your geans colour;
+        `)
+      }
+      else if(document.getElementById("product_col").innerHTML === "col_pettioce")
+      {
+        document.getElementById("LEGGINS").remove();
+        document.getElementById("JEANS").remove();
+        alert(`${name_p.value}
+        select your petticote colour;`)
+      }
+      else{
+        document.getElementById("L&j&p_DIV").remove();
+      }
+    }colour_div_opacoty();
+
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}topFunction();
+
+
+
+setTimeout(() => {
+  alert(`${name_p.value}
+  ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS पेमेंट करण्यासाठी कोणत्याही पेमेंट अँप ने हा QR कोड स्कॅन करा आणि पेमेंट पूर्ण झाल्यांनतर ट्रान्झॅक्शन आयडीचे शेवटचे 4 अंक लिहा
+  `)
+}, 6000);
+
+}
+//CHACK MARK
+document.getElementById("chak_mark").innerHTML = `मी ${name_p.value} वरील सर्व माहिती मी काळजीपूर्वक भरली आहे  आणि मला सर्व Terms and Conditions मान्य आहेत.`
+
+})
+
+
+
+
+
      
-  </select>
-  <div id="P_2">Select 2nd Petticoat colour</div>
-  <select id="Petticoat_2">
-      <option value="">BLACK colour</option>
-      <option value="">WHITE  colour</option>
-      <option value="">RED  colour</option>
-      <option value="">NAVY BLUE colour</option>
+      
 
-      <option value="">ORANGE colour</option>
-      <option value="">GREEN colour</option>
-      <option value="">SKIN colour</option>
-      <option value="">PINK  colour</option>
+
+
+
+//whatsapp go data
+document.getElementById("gotowhatsapp").addEventListener("click",function(){
+  
+
+
+  if(document.getElementById("product_col").innerHTML === "col_leggins"){
+  var selectElement_L1_COL = document.getElementById("leggise_1");
+  var COL_L1 = selectElement_L1_COL.options[selectElement_L1_COL.selectedIndex].text;
+  document.getElementById("col_last_1").innerHTML = COL_L1;
+console.log(COL_L1);
+var COLOUR1 = COL_L1;
+
+  var selectElement_L2_COL = document.getElementById("leggise_2");
+  var COL_L2 = selectElement_L2_COL.options[selectElement_L2_COL.selectedIndex].text;
+  document.getElementById("col_last_2").innerHTML = COL_L2;
+  console.log(COL_L2);
+  var COLOUR2 = COL_L2;
+
+  var selectElement_L3_COL = document.getElementById("leggise_3");
+  var COL_L3 = selectElement_L3_COL.options[selectElement_L3_COL.selectedIndex].text;
+  document.getElementById("col_last_3").innerHTML = COL_L3;
+console.log(COL_L3);
+var COLOUR3 = COL_L3;
+
+}
+else if(document.getElementById("product_col").innerHTML === "col_jeans"
+)
+{
+  var selectElement_J1_COL = document.getElementById("jeans_1");
+  var COL_J1 = selectElement_J1_COL.options[selectElement_J1_COL.selectedIndex].text;
+  document.getElementById("col_last_1").innerHTML = COL_J1;
+console.log(COL_J1);
+var COLOUR1 = COL_J1;
+
+  var selectElement_J2_COL = document.getElementById("jeans_2");
+  var COL_J2 = selectElement_J2_COL.options[selectElement_J2_COL.selectedIndex].text;
+  document.getElementById("col_last_2").innerHTML = COL_J2;
+  console.log(COL_J2);
+  var COLOUR2 = COL_J2;
+
+
+  var selectElement_J3_COL = document.getElementById("jeans_3");
+  var COL_J3 = selectElement_J3_COL.options[selectElement_J3_COL.selectedIndex].text;
+  document.getElementById("col_last_3").innerHTML = COL_J3;
+console.log(COL_J3);
+var COLOUR3 = COL_J3;
+
+
+}
+else if(
+ document.getElementById("product_col").innerHTML === "col_pettioce"
+){
+  var selectElement_P1_COL = document.getElementById("Petticoat_1");
+  var COL_P1 = selectElement_P1_COL.options[selectElement_P1_COL.selectedIndex].text;
+  document.getElementById("col_last_1").innerHTML = COL_P1;
+console.log(COL_P1);
+var COLOUR1 = COL_P1;
+
+  var selectElement_P2_COL = document.getElementById("Petticoat_2");
+  var COL_P2 = selectElement_P2_COL.options[selectElement_P2_COL.selectedIndex].text;
+  document.getElementById("col_last_2").innerHTML = COL_P2;
+  console.log(COL_P2);
+  var COLOUR2 = COL_P2;
+
+
+  var selectElement_P3_COL = document.getElementById("Petticoat_3");
+  var COL_P3 = selectElement_P3_COL.options[selectElement_P3_COL.selectedIndex].text;
+  document.getElementById("col_last_3").innerHTML = COL_P3;
+console.log(COL_P3);
+var COLOUR3 = COL_P3;
+
+}
+else{
+  var COLOUR1 = "NA";
+  var COLOUR2 = "NA";
+  var COLOUR3 = "NA";
+};
+
+
+
+
+
+ if (document.getElementById("transaction_id").value == ""){
+alert(`${name_p.value}
+ ट्रान्झॅक्शन आयडीचे शेवटचे 4 अंक  लिहा`)
+document.getElementById("transaction_id").style.backgroundColor = "rgb(239, 118, 118)";
+}
+  else if(document.getElementById("transaction_id").value.length != 4 ){
+alert(`${name_p.value}
+ट्रान्झॅक्शन आयडीचे शेवटचे 4 अंक लिहा ;
+तुम्ही ${document.getElementById("transaction_id").value.length} अंक लिहत आहात.
+
+ट्रान्झॅक्शन आयडी तपासा आणि पुन्हा लिहा`)
+  }
+else{
+
+    var url = "https://wa.me/919834926132?text="
+
+    + "Order Details" + "%0a"
+
+    + "order ID -" +  document.getElementById("final_id").innerHTML + "%0a"  + "%0a"   
+
+  +  document.getElementById("name_and_address_sumury").innerText + "%0a"+ "%0a" 
+
+  + product_name.innerText  + "%0a" + "%0a" 
+
+  +document.getElementById("finanl_amount").innerHTML + "%0a"  + "%0a" 
+
+  +   COLOUR1 + "/" +  COLOUR2 + "/"  + COLOUR3 + "%0a"+ "%0a" 
+
+  + "ORDER DATE" + " " + document.getElementById("today_date").innerHTML + "%0a"
+
+    + "order delivery before" + " " + document.getElementById("order_del_date").innerHTML + "*" + "%0a"+ "%0a" 
+
+  + "trans.ID:-XXXXXXX" + document.getElementById("transaction_id").value  + "%0a"+ "%0a" 
+
+  + "send SMS"
+  window.open(url,'_blank').focus();
+};
+})
+
+
+
 
   
-      <option value="">BLUE colour</option>
-      <option value="">CREAM colour</option>              
-      <option value="">SKY BLUE colour</option>                  
-      <option value="">YELLOW colour</option>
-      <option value="">MARRON colour</option>
-     
-  </select>
-  <div id="P_3">आमची टीम तुम्ही निवडलेला कलर देण्याचा 100% प्रयत्न करेल पण जर स्टोरेज मध्ये वरील 2 कलर नसतील तर तुम्ही कोणता कॉलवर घेऊ इच्छिता.</div>
-  <select id="Petticoat_3">
-      <option value="">BLACK colour</option>
-      <option value="">WHITE  colour</option>
-      <option value="">RED  colour</option>
-      <option value="">NAVY BLUE colour</option>
-
-      <option value="">ORANGE colour</option>
-      <option value="">GREEN colour</option>
-      <option value="">SKIN colour</option>
-      <option value="">PINK  colour</option>
-
-  
-      <option value="">BLUE colour</option>
-      <option value="">CREAM colour</option>              
-      <option value="">SKY BLUE colour</option>                  
-      <option value="">YELLOW colour</option>
-      <option value="">MARRON colour</option>
-  
-  </select>
-  
-      </div>
- </div>
-
-  <div id="name_and_address_sumury"></div>
-  <br>
-  <div id="colour_last_div">
-    <div id="col_last_1"></div>
-    <div id="col_last_2"></div>
-    <div id="col_last_3"></div>
-   </div>
-
-
-
-  <div id="final_bill_div">
-<div  id="final_bill"></div>
-<br>
-<div id="finanl_amount"></div>
-</BR>
-</div>
-
-<DIV id="Payment_gatway1"></DIV>
-</BR>
-<img id="qr_img" src="qr.jpg" alt="qr.jpg">
-</BR>
-<DIV id="Payment_gatway2"></DIV>
-</BR>
-<div id="id_input" >Enter UPI transactiion id last 4 digit
-  <input  id="transaction_id" value="" type="number">
- </div>
- <br>
-
-
-
-</BR>
-<div>तुम्ही 20% ची बचत केली त्याबद्दल अभिनंदन. </BR>
-  पेमेंट झाल्या नंतर -Submit- या बटन वर क्लिक करा.</BR>
-  क्लिक केल्या नंतर  तुम्ही  व्हाट्सअप मध्ये जाल.</BR>
- व्हाट्सअप मध्ये SEND SMS करा तुम्हाला व्हाट्सअप वर तुम्हाला तुमचा 1 ऑर्डर आयडी भेटेल.</BR>
- आयडी भेटल्या नंतर तुमची ऑर्डर आमच्या टीम ला भेटेल.
- ऑर्डर ची माहिती तपासून आमची टीम तुम्हाला ऑर्डर कन्फर्म असा SMS करेल आणि तुमची आर्डर कन्फर्म होईल.नंतर
- आमची टीम तुमची ऑर्डर तुम्हाला लवकरच पाठवेल.
-<div id="chak_mark"></div></div>
-
- <button class="button" id="gotowhatsapp">-Submit-</button>
-</div>
-
-</div>
-
-
-
-        <script>
-
-            
-            
-            var slideH1Index = 0;
-            showSlidesH1();
-            
-            function showSlidesH1() {
-              let i;
-              let slidesH1 = document.getElementsByClassName("mySlidesH1");
-              let dotsH1 = document.getElementsByClassName("dotH1");
-              for (i = 0; i < slidesH1.length; i++) {
-                slidesH1[i].style.display = "none";  
-              }
-              slideH1Index++;
-              if (slideH1Index > slidesH1.length) {slideH1Index = 1}    
-              for (i = 0; i < dotsH1.length; i++) {
-                dotsH1[i].className = dotsH1[i].className.replace(" active", "");
-              }
-              slidesH1[slideH1Index-1].style.display = "block";  
-              dotsH1[slideH1Index-1].className += " active";
-              setTimeout(showSlidesH1, 2000); // Change image every 2 seconds
-            }
-                </script>
-
-
-
-<script src="script.js"></script>
-</body>
-</html>
