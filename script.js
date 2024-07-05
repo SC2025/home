@@ -14,8 +14,9 @@ setInterval(() => {
 setInterval(() => {
   document.getElementById("Payment_gatway1").style.backgroundColor = "red";
   document.getElementById("Payment_gatway2").style.backgroundColor = "red";
-  document.getElementById("finanl_amount").style.backgroundColor = "YELLOW";
+  document.getElementById("finanl_amount").style.backgroundColor = "WHITE";
   document.getElementById("finanl_amount").style.color = "black";
+  document.getElementById("finanl_amount").style.border = "2PX SOLID black";
 
 }, 1000);
 
@@ -316,7 +317,9 @@ transport charges = 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity}
 ;
 
 
-document.getElementById("finanl_amount").innerText = `final BILL = ${selectpro_quntity} SET product price (${product_price.innerHTML * selectpro_quntity} RS) + transport charges (${30 * selectpro_quntity} RS) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
+document.getElementById("finanl_amount").innerText = 
+`final BILL = 
+${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity} RS) + transport RS (${30 * selectpro_quntity} RS) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
