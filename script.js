@@ -308,7 +308,7 @@ transport charges = 30 RS (1 SET).
 BILL = product price x quantity (ADD) transport charges x quantity.`;
 
 
-document.getElementById("finanl_amount").innerText = `BILL :- ${product_price.innerHTML} RS X  ${selectpro_quntity} SET (ADD) ${transport_charge} RS X ${selectpro_quntity} SET = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`
+document.getElementById("finanl_amount").innerText = `BILL :- ${product_price.innerHTML} RS X  ${selectpro_quntity} SET (ADD TRA.C:-) ${transport_charge} RS X ${selectpro_quntity} SET = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
