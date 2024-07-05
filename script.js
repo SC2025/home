@@ -1,26 +1,28 @@
 setInterval(() => {
   document.getElementById("product-quntity").style.backgroundColor = "red";
 
-}, 500);
+}, 1000);
 
 setInterval(() => {
   document.getElementById("product-quntity").style.backgroundColor = "black";
 
 
-}, 1000);           
+}, 2000);           
 
 setInterval(() => {
   document.getElementById("Payment_gatway1").style.backgroundColor = "red";
   document.getElementById("Payment_gatway2").style.backgroundColor = "red";
-  document.getElementById("finanl_amount").style.backgroundColor = "red";
-}, 500);
+  document.getElementById("finanl_amount").style.backgroundColor = "YELLOW";
+  document.getElementById("finanl_amount").style.color = "black";
+
+}, 1000);
 
 setInterval(() => {
   document.getElementById("Payment_gatway1").style.backgroundColor = "black";
   document.getElementById("Payment_gatway2").style.backgroundColor = "black";
   document.getElementById("finanl_amount").style.backgroundColor = "black";
-
-}, 1000);
+  document.getElementById("finanl_amount").style.color = "white";
+}, 2000);
 
 
 
