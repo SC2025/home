@@ -1,3 +1,28 @@
+setInterval(() => {
+  document.getElementById("product-quntity").style.backgroundColor = "red";
+
+}, 500);
+
+setInterval(() => {
+  document.getElementById("product-quntity").style.backgroundColor = "black";
+
+
+}, 1000);           
+
+setInterval(() => {
+  document.getElementById("Payment_gatway1").style.backgroundColor = "red";
+  document.getElementById("Payment_gatway2").style.backgroundColor = "red";
+  document.getElementById("finanl_amount").style.backgroundColor = "red";
+}, 500);
+
+setInterval(() => {
+  document.getElementById("Payment_gatway1").style.backgroundColor = "black";
+  document.getElementById("Payment_gatway2").style.backgroundColor = "black";
+  document.getElementById("finanl_amount").style.backgroundColor = "black";
+
+}, 1000);
+
+
 
 setTimeout(() => {
   alert(`प्रोड्कट आर्डर साठी फोटो खालील ब्लॅक कलर चे बटन आहेत ;
@@ -15,7 +40,7 @@ setTimeout(() => {
             minutes = minutes < 10 ? '0' + minutes : minutes; 
             var myTime = "सह्याद्री-" + minutes + hours + "-"
             document.getElementById("pree_id").innerHTML = myTime
-          } ;  
+          };  
           ORDER_ID_PREE()
 
 //next order id
@@ -40,8 +65,29 @@ function ORDER_ID_NEXT(){
     day.padStart('2', '0') : day;
         //PRINTING TODAY DATE
         document.getElementById("today_date").innerHTML = `${day}.${month}.${year}`;
-    // Printing the first id and last
-    document.getElementById("last_id").innerHTML = `${month}${year}${day}`;
+console.log(window.location.href);
+       
+        if (window.location.href == "https://sc2025.github.io/man/"
+          || window.location.href == "sc2025.github.io/man/"
+        ) {
+          document.getElementById("last_id").innerHTML = `${month}${year}${day}-M`;
+        }
+      else if (window.location.href == "https://sc2025.github.io/women/"||
+        window.location.href == "sc2025.github.io/women/"
+      ) {
+        document.getElementById("last_id").innerHTML = `${month}${year}${day}-WK`;
+        }
+else if (window.location.href == "https://sc2025.github.io/home/"||
+  window.location.href == "sc2025.github.io/home/"
+) {
+      // Printing the first id and last
+      document.getElementById("last_id").innerHTML = `${month}${year}${day}-H`}
+else(
+  document.getElementById("last_id").innerHTML = `${month}${year}${day}`
+)
+
+
+
 
   };
 
@@ -84,16 +130,37 @@ for(let i = 0; i<button.length; i++){
  
       document.getElementById("product_price_result").innerHTML = this.value;
       document.getElementById("product_name_result").innerText = this.innerText;
-  
+      document.getElementById("product_col").innerHTML = this.name;
 
       document.getElementById("all_pro_page").remove();
 
       document.getElementById("pp_div_1").style.opacity = "1";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }topFunction();
+
+
+
+
+
+
 
     })
 };
@@ -216,6 +283,14 @@ var selectElement_prod_quantitye = product_quntity_P;
 
 
 
+
+
+
+
+
+
+
+
 //final bill
 var transport_charge = 30;
   document.getElementById("final_bill").innerText = 
@@ -232,7 +307,8 @@ transport charges = 30 RS (1 SET).
 
 BILL = product price x quantity (ADD) transport charges x quantity.`;
 
-document.getElementById("finanl_amount").innerText = `BILL = ${product_price.innerHTML} RS X  ${selectpro_quntity} SET (ADD) ${transport_charge} RS X ${selectpro_quntity} SET = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`
+
+document.getElementById("finanl_amount").innerText = `BILL :- ${product_price.innerHTML} RS X  ${selectpro_quntity} SET (ADD) ${transport_charge} RS X ${selectpro_quntity} SET = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
@@ -242,60 +318,64 @@ document.getElementById("pp_div_1").remove();
 document.getElementById("pp_div_2").style.opacity = "1";
 
 
+
+//colour 
+      //LEGGIND AND JEAND OPACITY
+      function colour_div_opacoty(){
+        if (document.getElementById("product_col").innerHTML === "col_leggins") {
+          document.getElementById("JEANS").remove();
+        document.getElementById("Petticoat").remove();
+        alert(`${name_p.value}
+        select your leggins colour;
+        `)
+      } 
+      else if(document.getElementById("product_col").innerHTML === "col_jeans")
+      {
+        document.getElementById("LEGGINS").remove();
+        document.getElementById("Petticoat").remove();
+        alert(`${name_p.value}
+        select your geans colour;
+        `)
+      }
+      else if(document.getElementById("product_col").innerHTML === "col_pettioce")
+      {
+        document.getElementById("LEGGINS").remove();
+        document.getElementById("JEANS").remove();
+        alert(`${name_p.value}
+        select your petticote colour;`)
+      }
+      else{
+        document.getElementById("L&j&p_DIV").remove();
+      }
+    }colour_div_opacoty();
+
+
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }topFunction();
+
+
 
 setTimeout(() => {
   alert(`${name_p.value}
   ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS पेमेंट करण्यासाठी कोणत्याही पेमेंट अँप ने हा QR कोड स्कॅन करा आणि पेमेंट पूर्ण झाल्यांनतर ट्रान्झॅक्शन आयडीचे शेवटचे 4 अंक लिहा
   `)
 }, 6000);
+
 }
 //CHACK MARK
-document.getElementById("chak_mark").innerHTML = `वरील सर्व माहिती मी काळजीपूर्वक भरली आहे .मी ${name_p.value} मला सर्व अटी आणि नियम मान्य आहेत.`
-
-//colour 
-      //LEGGIND AND JEAND OPACITY
-      if(product_name.innerHTML == "Lyra leggings ANKLE length" ||
-       product_name.innerHTML == "Lyra leggings FULL length"|| 
-       product_name.innerHTML == "Hirshita L sizw leggins"|| 
-       product_name.innerHTML == "Hirshita XL sizw leggins")
-       {
-  document.getElementById("JEANS").remove();
-  document.getElementById("Petticoat").remove();
-  alert(`${name_p.value}
-  select your ${product_name_last_name} colour;
-  `)
-}
-else if(product_name.innerHTML == "JEANS"){
-  document.getElementById("LEGGINS").remove();
-  document.getElementById("Petticoat").remove();
-  alert(`${name_p.value}
-  select your ${product_name_last_name} colour;
-  `)
-}
-else if(product_name.innerHTML == "Petticoats 38-40 no."||
-product_name.innerHTML == "Petticoats 42 no."){
-  document.getElementById("LEGGINS").remove();
-  document.getElementById("JEANS").remove();
-  alert(`${name_p.value}
-  select your ${product_name_last_name} colour;
-  `)
-}
-else{
-  document.getElementById("L&j&p_DIV").remove();
-  
-}
-
-
+document.getElementById("chak_mark").innerHTML = `मी ${name_p.value} वरील सर्व माहिती मी काळजीपूर्वक भरली आहे  आणि मला सर्व Terms and Conditions मान्य आहेत.`
 
 })
 
 
 
 
+
+     
+      
 
 
 
@@ -305,10 +385,7 @@ document.getElementById("gotowhatsapp").addEventListener("click",function(){
   
 
 
-  if(product_name.innerHTMLL == "Lyra leggings ANKLE length" ||
-product_name.innerHTML.innerHTML == "Lyra leggings FULL length"|| 
-product_name.innerHTML.innerHTML =="Hirshita L sizw leggins"|| 
-product_name.innerHTML.innerHTML == "Hirshita XL sizw leggins"){
+  if(document.getElementById("product_col").innerHTML === "col_leggins"){
   var selectElement_L1_COL = document.getElementById("leggise_1");
   var COL_L1 = selectElement_L1_COL.options[selectElement_L1_COL.selectedIndex].text;
   document.getElementById("col_last_1").innerHTML = COL_L1;
@@ -328,7 +405,8 @@ console.log(COL_L3);
 var COLOUR3 = COL_L3;
 
 }
-else if(product_name.innerHTML.innerHTML == "JEANS")
+else if(document.getElementById("product_col").innerHTML === "col_jeans"
+)
 {
   var selectElement_J1_COL = document.getElementById("jeans_1");
   var COL_J1 = selectElement_J1_COL.options[selectElement_J1_COL.selectedIndex].text;
@@ -351,8 +429,9 @@ var COLOUR3 = COL_J3;
 
 
 }
-else if(product_name.innerHTML == "Petticoats 38-40 no."||
-product_name.innerHTML == "Petticoats 38-40 no."){
+else if(
+ document.getElementById("product_col").innerHTML === "col_pettioce"
+){
   var selectElement_P1_COL = document.getElementById("Petticoat_1");
   var COL_P1 = selectElement_P1_COL.options[selectElement_P1_COL.selectedIndex].text;
   document.getElementById("col_last_1").innerHTML = COL_P1;
