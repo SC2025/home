@@ -12,8 +12,10 @@ setInterval(() => {
 }, 2000);           
 
 setInterval(() => {
-  document.getElementById("Payment_gatway1").style.backgroundColor = "red";
-  document.getElementById("Payment_gatway2").style.backgroundColor = "red";
+  document.getElementById("Payment_gatway1").style.backgroundColor = "rgb(255, 55, 0)";
+  document.getElementById("Payment_gatway2").style.backgroundColor = "rgb(255, 55, 0)";
+  document.getElementById("Payment_gatway1").style.color = "white";
+  document.getElementById("Payment_gatway2").style.color = "white";
   document.getElementById("finanl_amount").style.backgroundColor = "WHITE";
   document.getElementById("finanl_amount").style.color = "black";
   document.getElementById("finanl_amount").style.border = "2PX SOLID black";
@@ -23,6 +25,8 @@ setInterval(() => {
 setInterval(() => {
   document.getElementById("Payment_gatway1").style.backgroundColor = "black";
   document.getElementById("Payment_gatway2").style.backgroundColor = "black";
+  document.getElementById("Payment_gatway1").style.color = "white";
+  document.getElementById("Payment_gatway2").style.color = "white";
   document.getElementById("finanl_amount").style.backgroundColor = "black";
   document.getElementById("finanl_amount").style.color = "white";
 }, 2000);
@@ -300,7 +304,8 @@ var selectElement_prod_quantitye = product_quntity_P;
 var transport_charge = 30;
   document.getElementById("final_bill").innerText = 
 `FINAL BILL :-
-product name= ${product_name.innerText}.
+product name=
+${product_name.innerText}.
 
 discount :- 20 %.
 
@@ -308,9 +313,9 @@ product price = ${product_price.innerHTML} RS.
 
 quantity = ${selectpro_quntity} SET.
 
-${selectpro_quntity} SET product price = ${product_price.innerHTML} RS X ${selectpro_quntity} SET = ${product_price.innerHTML* selectpro_quntity} RS.
+${selectpro_quntity} SET product price :- ${product_price.innerHTML} RS X ${selectpro_quntity} SET = ${product_price.innerHTML* selectpro_quntity} RS.
 
-transport charges = 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity} RS.
+transport charges :- 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity} RS.
 
  `
 
@@ -318,8 +323,8 @@ transport charges = 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity}
 
 
 document.getElementById("finanl_amount").innerText = 
-`final BILL = 
-${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity} RS) + transport RS (${30 * selectpro_quntity} RS) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
+`final BILL :- 
+${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${30 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
