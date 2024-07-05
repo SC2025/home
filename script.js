@@ -1,4 +1,5 @@
-
+document.getElementById("secA_btn").disabled = true;
+document.getElementById("gotowhatsapp").disabled = true;
 
 setInterval(() => {
   document.getElementById("product-quntity").style.backgroundColor = "red";
@@ -136,6 +137,8 @@ let button = document.querySelectorAll(".btn");
 
 for(let i = 0; i<button.length; i++){
   button[i].addEventListener("click",function () {
+
+
  
       document.getElementById("product_price_result").innerHTML = this.value;
       document.getElementById("product_name_result").innerText = this.innerText;
@@ -148,16 +151,8 @@ for(let i = 0; i<button.length; i++){
 
 
 
-
-
-
-
-
-
-
-
-
-
+      document.getElementById("secA_btn").disabled = false ;
+      document.getElementById("gotowhatsapp").disabled = false ;
 
 
       function topFunction() {
