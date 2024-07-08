@@ -497,7 +497,7 @@ else{
 
   + product_name.innerText  + "%0a" + "%0a" 
 
-  +document.getElementById("finanl_amount").innerHTML + "%0a"  + "%0a" 
+  +document.getElementById("finanl_amount").innerText + "%0a"  + "%0a" 
 
   +   COLOUR1 + "/" +  COLOUR2 + "/"  + COLOUR3 + "%0a"+ "%0a" 
 
