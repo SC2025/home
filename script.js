@@ -345,14 +345,14 @@ document.getElementById("pp_div_2").style.opacity = "1";
 //colour 
       //LEGGIND AND JEAND OPACITY
       function colour_div_opacoty(){
-        if (document.getElementById("product_col").innerHTML === "col_leggins") {
+        if (document.getElementById("product_col").innerHTML === "L") {
           document.getElementById("JEANS").remove();
         document.getElementById("Petticoat").remove();
         alert(`${name_p.value}
         select your leggins colour;
         `)
       } 
-      else if(document.getElementById("product_col").innerHTML === "col_jeans")
+      else if(document.getElementById("product_col").innerHTML === "J")
       {
         document.getElementById("LEGGINS").remove();
         document.getElementById("Petticoat").remove();
@@ -360,7 +360,7 @@ document.getElementById("pp_div_2").style.opacity = "1";
         select your geans colour;
         `)
       }
-      else if(document.getElementById("product_col").innerHTML === "col_pettioce")
+      else if(document.getElementById("product_col").innerHTML === "P")
       {
         document.getElementById("LEGGINS").remove();
         document.getElementById("JEANS").remove();
@@ -408,7 +408,7 @@ document.getElementById("gotowhatsapp").addEventListener("click",function(){
   
 
 
-  if(document.getElementById("product_col").innerHTML === "col_leggins"){
+  if(document.getElementById("product_col").innerHTML === "L"){
   var selectElement_L1_COL = document.getElementById("leggise_1");
   var COL_L1 = selectElement_L1_COL.options[selectElement_L1_COL.selectedIndex].text;
   document.getElementById("col_last_1").innerHTML = COL_L1;
@@ -428,7 +428,7 @@ console.log(COL_L3);
 var COLOUR3 = COL_L3;
 
 }
-else if(document.getElementById("product_col").innerHTML === "col_jeans"
+else if(document.getElementById("product_col").innerHTML === "J"
 )
 {
   var selectElement_J1_COL = document.getElementById("jeans_1");
@@ -453,7 +453,7 @@ var COLOUR3 = COL_J3;
 
 }
 else if(
- document.getElementById("product_col").innerHTML === "col_pettioce"
+ document.getElementById("product_col").innerHTML === "P"
 ){
   var selectElement_P1_COL = document.getElementById("Petticoat_1");
   var COL_P1 = selectElement_P1_COL.options[selectElement_P1_COL.selectedIndex].text;
