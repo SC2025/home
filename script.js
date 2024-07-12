@@ -421,11 +421,8 @@ var COLOUR1 = COL_L1;
   console.log(COL_L2);
   var COLOUR2 = COL_L2;
 
-  var selectElement_L3_COL = document.getElementById("leggise_3");
-  var COL_L3 = selectElement_L3_COL.options[selectElement_L3_COL.selectedIndex].text;
-  document.getElementById("col_last_3").innerHTML = COL_L3;
-console.log(COL_L3);
-var COLOUR3 = COL_L3;
+
+var COLOUR3 = "NA";
 
 }
 else if(document.getElementById("product_col").innerHTML === "J"
@@ -437,11 +434,8 @@ else if(document.getElementById("product_col").innerHTML === "J"
 console.log(COL_J1);
 var COLOUR1 = COL_J1;
 
-  var selectElement_J2_COL = document.getElementById("jeans_2");
-  var COL_J2 = selectElement_J2_COL.options[selectElement_J2_COL.selectedIndex].text;
-  document.getElementById("col_last_2").innerHTML = COL_J2;
-  console.log(COL_J2);
-  var COLOUR2 = COL_J2;
+
+  var COLOUR2 = "NA";
 
 
 
