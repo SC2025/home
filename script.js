@@ -444,11 +444,8 @@ var COLOUR1 = COL_J1;
   var COLOUR2 = COL_J2;
 
 
-  var selectElement_J3_COL = document.getElementById("jeans_3");
-  var COL_J3 = selectElement_J3_COL.options[selectElement_J3_COL.selectedIndex].text;
-  document.getElementById("col_last_3").innerHTML = COL_J3;
-console.log(COL_J3);
-var COLOUR3 = COL_J3;
+
+var COLOUR3 = "NA";
 
 
 }
