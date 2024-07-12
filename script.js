@@ -16,8 +16,13 @@ setTimeout(() => {
 document.getElementById("secA_btn").disabled = true;
 document.getElementById("gotowhatsapp").disabled = true;
 
+
+
+
+
 setInterval(() => {
   document.getElementById("product-quntity").style.backgroundColor = "red";
+
 
 }, 1000);
 
@@ -357,7 +362,7 @@ document.getElementById("pp_div_2").style.opacity = "1";
         document.getElementById("LEGGINS").remove();
         document.getElementById("Petticoat").remove();
         alert(`${name_p.value}
-        select your geans colour;
+        select your Jeans colour;
         `)
       }
       else if(document.getElementById("product_col").innerHTML === "P")
