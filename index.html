@@ -58,17 +58,17 @@
               
                             <!-- REAL PRICE CUT  -->
 
-                      <P><S class="M_price">180 RS </S>= 119 RS</P>
+                      <P><S class="M_price">180 RS </S>= 149 RS</P>
 
                         <!-- BUTTON VALUE  -->
                     
-                   <button class="btn" value="119" name="NA">
+                   <button class="btn" value="149">
 
                        <!-- PRODUCT NAME  -->
 
-                       single bed 1 bedsheet + 1 pillow cover <BR>
-                       1 PIECE =119 RS </BR>
-                       1 PIECES COMBO = 119 RS
+                       single bed 1 bedsheet + 1 pillow cover <br>
+                       1 PIECE =149 RS  <br>
+                       1 PIECES COMBO = 149 RS
 
                   </button>     
 
@@ -76,18 +76,18 @@
 
 
                     <!-- REAL PRICE CUT  -->
-
-                  <P><S class="M_price">350 RS </S>= 269 RS</P>
+                  
+                  <P><S class="M_price">350 RS </S>= 299 RS</P>
 
                   <!-- BUTTON VALUE  -->
 
-               <button class="btn" value="269">
+               <button class="btn" value="299">
 
    <!-- PRODUCT NAME  -->
 
-            Duble bed 1 bedsheet + 2 pillow cover <BR>
-              1 PIECE = 269 RS </BR>
-               1 PIECES COMBO = 269 RS
+   duble bed 1 bedsheet + 2 pillow cover <br>
+   1 PIECE = 299 RS  <br>
+    1 PIECES COMBO = 299 RS
 
               </button> 
                     
@@ -101,42 +101,46 @@
 
  <DIV class="PRODCT_INFORMATION">
 
-  <!-- REAL PRICE CUT  -->
+
   <img src="H2.jpeg" alt="">
-<P><S class="M_price">80 RS </S>= 39 RS</P>
 
-<!-- BUTTON VALUE  -->
-
-<button class="btn" value="78">
-
-<!-- PRODUCT NAME  -->
-
-Door Mat 2 pieces Combo <BR>
-1 PIECE = 39 RS </BR>
- 2 PIECES COMBO = 78 RS</BR>
-
-</button> 
-  
-</DIV>
-
-
-
- <!-- PRODCT INFORMATION -->
-
- <DIV class="PRODCT_INFORMATION">
 
   <!-- REAL PRICE CUT  -->
+<P><S class="M_price">80 RS </S>= 49 RS</P>
+
+<!-- BUTTON VALUE  -->
+
+<button class="btn" value="99">
+
+<!-- PRODUCT NAME  -->
+
+Door Mat 2 pieces Combo <br>
+1 PIECE = 49 RS <br>
+ 2 PIECES COMBO = 99 RS
+
+</button> 
+  
+</DIV>
+
+
+
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+
+
   <img src="H3.jpg" alt="">
-<P><S class="M_price">25 RS </S>= 9 RS</P>
+    <!-- REAL PRICE CUT  -->
+<P><S class="M_price">25 RS </S>= 14 RS</P>
 
 <!-- BUTTON VALUE  -->
 
-<button class="btn" value="45">
+<button class="btn" value="70">
 
 <!-- PRODUCT NAME  -->
-Chapati / kitchen Napkins <BR>
-1 PIECE = 9 RS </BR>
- 5 PIECES COMBO = 45 RS </BR>
+Chapati / kitchen Napkins <br>
+1 PIECE = 14 RS <br>
+5 PIECES COMBO = 70 RS
 
 </button> 
   
@@ -148,34 +152,11 @@ Chapati / kitchen Napkins <BR>
 
  <DIV class="PRODCT_INFORMATION">
 
-  <!-- REAL PRICE CUT  -->                
+             
 <img src="H5.jpg" alt="">
-<P><S class="M_price">25 RS </S>= 10 RS</P>
+  <!-- REAL PRICE CUT  -->   
 
-<!-- BUTTON VALUE  -->
-
-<button class="btn" value="50">
-
-<!-- PRODUCT NAME  -->
-
-Small Napkins <BR>
-1 PIECE = 10 RS </BR> 
-5 PIECES COMBO = 50 RS</BR>
-
-</button> 
-  
-</DIV>
-
-
-
-
- <!-- PRODCT INFORMATION -->
-
- <DIV class="PRODCT_INFORMATION">
-
-  <!-- REAL PRICE CUT  -->                
-<img src="H6.jpg" alt="">
-<P><S class="M_price">30 RS </S>= 14 RS</P>
+<P><S class="M_price">25 RS </S>= 14 RS</P>
 
 <!-- BUTTON VALUE  -->
 
@@ -183,10 +164,37 @@ Small Napkins <BR>
 
 <!-- PRODUCT NAME  -->
 
+Small Napkins <br>
+1 PIECE = 14 RS  <br>
+5 PIECES COMBO = 70 RS
 
-big Napkins <BR>
-1 PIECE = 14 RS </BR>
- 5 PIECES COMBO = 70 RS </BR>
+</button> 
+  
+</DIV>
+
+
+
+
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+            
+<img src="H6.jpg" alt="">
+
+
+  <!-- REAL PRICE CUT  -->    
+<P><S class="M_price">30 RS </S>= 19 RS</P>
+
+<!-- BUTTON VALUE  -->
+
+<button class="btn" value="95">
+
+<!-- PRODUCT NAME  -->
+
+
+big Napkins <br>
+1 PIECE = 19 RS <br>
+5 PIECES COMBO = 95 RS
 
 </button> 
   
@@ -426,32 +434,7 @@ big Napkins <BR>
 
 
   <!-- product photo change function -->
-        <script>
-
-            
-            
-            var slideH1Index = 0;
-            showSlidesH1();
-            
-            function showSlidesH1() {
-              let i;
-              let slidesH1 = document.getElementsByClassName("mySlidesH1");
-              let dotsH1 = document.getElementsByClassName("dotH1");
-              for (i = 0; i < slidesH1.length; i++) {
-                slidesH1[i].style.display = "none";  
-              }
-              slideH1Index++;
-              if (slideH1Index > slidesH1.length) {slideH1Index = 1}    
-              for (i = 0; i < dotsH1.length; i++) {
-                dotsH1[i].className = dotsH1[i].className.replace(" active", "");
-              }
-              slidesH1[slideH1Index-1].style.display = "block";  
-              dotsH1[slideH1Index-1].className += " active";
-              setTimeout(showSlidesH1, 2000); // Change image every 2 seconds
-            }
-                </script>
-
-
+<script src="script_photo_h.js"></script>
   <!-- product payment pay function -->
 <script src="script.js"></script>
 </body>
