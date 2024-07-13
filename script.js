@@ -336,7 +336,7 @@ transport charges :- 0 RS X ${selectpro_quntity} SET = ${0 * selectpro_quntity} 
 
 document.getElementById("finanl_amount").innerText = 
 `final BILL :- 
-${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${0 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
+${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${0 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 0 * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
