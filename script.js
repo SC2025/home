@@ -313,7 +313,7 @@ var selectElement_prod_quantitye = product_quntity_P;
 
 
 //final bill
-var transport_charge = 30;
+var transport_charge = 0;
   document.getElementById("final_bill").innerText = 
 `FINAL BILL :-
 product name=
@@ -327,7 +327,7 @@ quantity = ${selectpro_quntity} SET.
 
 ${selectpro_quntity} SET product price :- ${product_price.innerHTML} RS X ${selectpro_quntity} SET = ${product_price.innerHTML* selectpro_quntity} RS.
 
-transport charges :- 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity} RS.
+transport charges :- 30 RS X ${selectpro_quntity} SET = ${0 * selectpro_quntity} RS.
 
  `
 
@@ -336,7 +336,7 @@ transport charges :- 30 RS X ${selectpro_quntity} SET = ${30 * selectpro_quntity
 
 document.getElementById("finanl_amount").innerText = 
 `final BILL :- 
-${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${30 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
+${selectpro_quntity} SET product RS (${product_price.innerHTML * selectpro_quntity}) + transport RS (${0 * selectpro_quntity}) = ${product_price.innerHTML * selectpro_quntity + 30 * selectpro_quntity} RS`
 
 //qr up and down sms
 document.getElementById("Payment_gatway1").innerHTML = `scan QR code and pay = ${product_price.innerHTML * selectpro_quntity + transport_charge * selectpro_quntity} RS`;
