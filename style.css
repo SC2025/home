@@ -63,9 +63,15 @@
     font-size: 25px;
     }
     
+p{
+    font-weight: 1000;
+    font-size: 20px;
+}
+
     .M_price{
       font-weight: 1000;
     color: red;
+    font-size: 30px;
       }
     
     select{
@@ -188,7 +194,10 @@
     padding: 15px;
     font-size: 20px;
     }
-
+    .PRODCT_INFORMATION:hover{background-color: rgb(143, 150, 245);
+        padding: 15px;
+        font-size: 20px;
+        }
     .btn{
       padding: 4px;
       background-color: #030303;
