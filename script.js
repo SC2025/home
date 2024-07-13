@@ -327,7 +327,7 @@ quantity = ${selectpro_quntity} SET.
 
 ${selectpro_quntity} SET product price :- ${product_price.innerHTML} RS X ${selectpro_quntity} SET = ${product_price.innerHTML* selectpro_quntity} RS.
 
-transport charges :- 30 RS X ${selectpro_quntity} SET = ${0 * selectpro_quntity} RS.
+transport charges :- 0 RS X ${selectpro_quntity} SET = ${0 * selectpro_quntity} RS.
 
  `
 
