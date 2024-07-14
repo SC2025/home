@@ -117,12 +117,19 @@ border-radius: 10PX;
     }
     
     #final_bill_div,.product_name_col{
-      border: 2px solid black;
       padding: 5px;
-      width: fit-content;
-      background-color: rgb(179, 240, 240);
-      font-weight: 1000;
-    margin-top: 5px;
+      padding-TOP: 20PX;
+      padding-bottom: 20PX;
+      background-color: #030303;
+      border-radius: 30px;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      border: 3px solid rgb(205, 233, 81);
+    margin-top: 20px;
+    font-size: 20px;
+    width: fit-content;
+justify-content: center;
+box-shadow: rgba(106, 106, 139, 0.25) 0px 50px 100px -20px, rgba(189, 101, 101, 0.3) 0px 30px 60px -30px;
     }
     #finanl_amount{
       color: black;
