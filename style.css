@@ -69,11 +69,23 @@ p{
 
 }
 
+.ORDER{
+font-weight: 1000;
+background-color: #dfd3d3;
+color: #030303;
+padding: 3PX;
+}
     .M_price{
       font-weight: 1000;
     color: red;
     font-size: 30px;
       }
+
+      .O_price{
+        font-weight: 1000;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+        }
     
     select{
       padding: 3px;
@@ -191,12 +203,12 @@ p{
     
     }
     
-    .btn:hover{background-color: red;
+    .btn:hover{
     padding: 15px;
     font-size: 20px;
     }
-    .PRODCT_INFORMATION:hover{background-color: rgb(238, 245, 179);
-        padding: 15px;
+    .PRODCT_INFORMATION:hover{background-color: rgb(246, 250, 215);
+        padding: 10px;
         font-size: 20px;
         }
     .btn{
@@ -204,10 +216,14 @@ p{
       background-color: #030303;
       border-radius: 5px;
       color: rgb(255, 255, 255);
-      font-weight: 1000;
+      font-weight: 100;
       border: 2px solid rgb(0, 0, 0);
     margin: 5PX;
+    margin-top: 20px;
     font-size: 20px;
     width: 100%;
-
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
+justify-content: center;
+text-align: center;
+align-items: center;
+display: flex;
+    }
