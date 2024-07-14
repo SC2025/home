@@ -155,32 +155,29 @@ let button = document.querySelectorAll(".btn");
 for(let i = 0; i<button.length; i++){
   button[i].addEventListener("click",function () {
 
-
+    button[i].style.backgroundColor = "blue";
+setTimeout(() => {
  
-      document.getElementById("product_price_result").innerHTML = this.value;
-      document.getElementById("product_name_result").innerText = this.innerText;
-      document.getElementById("product_col").innerHTML = this.name;
+  document.getElementById("product_price_result").innerHTML = this.value;
+  document.getElementById("product_name_result").innerText = this.innerText;
+  document.getElementById("product_col").innerHTML = this.name;
 
-      document.getElementById("all_pro_page").remove();
+  document.getElementById("all_pro_page").remove();
 
-      document.getElementById("pp_div_1").style.opacity = "1";
-
-
+  document.getElementById("pp_div_1").style.opacity = "1";
 
 
-      document.getElementById("secA_btn").disabled = false ;
-      document.getElementById("gotowhatsapp").disabled = false ;
 
 
-      function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.getElementById("secA_btn").disabled = false ;
+  document.getElementById("gotowhatsapp").disabled = false ;
+
+
+  function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
 }topFunction();
-
-
-
-
-
+}, 2000);
 
 
     })
