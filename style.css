@@ -71,10 +71,12 @@ p{
 
 .ORDER{
 font-weight: 1000;
-background-color: #dfd3d3;
+background-color: #ffffff;
 color: #030303;
 padding: 3PX;
+border-radius: 10PX;
 }
+
     .M_price{
       font-weight: 1000;
     color: red;
@@ -203,13 +205,9 @@ padding: 3PX;
     
     }
     
-    .btn:hover{
-    padding: 15px;
-    font-size: 20px;
-    }
-    .PRODCT_INFORMATION:hover{background-color: rgb(246, 250, 215);
+
+    .PRODCT_INFORMATION:hover{
         padding: 10px;
-        font-size: 20px;
         }
     .btn{
       padding: 4px;
