@@ -155,7 +155,7 @@ let button = document.querySelectorAll(".btn");
 for(let i = 0; i<button.length; i++){
   button[i].addEventListener("click",function () {
 
-    button[i].style.backgroundColor = "blue";
+    button[i].style.backgroundColor = "RED";
 setTimeout(() => {
  
   document.getElementById("product_price_result").innerHTML = this.value;
@@ -177,7 +177,7 @@ setTimeout(() => {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }topFunction();
-}, 2000);
+}, 1000);
 
 
     })
