@@ -316,7 +316,7 @@ var transport_charge = 0;
 product name=
 ${product_name.innerText}.
 
-discount :- 20 %.
+discount :- 20 tO 30 %.
 
 product price = ${product_price.innerHTML} RS.
 
