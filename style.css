@@ -199,13 +199,13 @@ border-radius: 10PX;
 
     .btn{
       padding: 5px;
+      padding-TOP: 20PX;
       padding-bottom: 20PX;
       background-color: #030303;
       border-radius: 30px;
       color: rgb(255, 255, 255);
       font-weight: 500;
       border: 3px solid rgb(205, 233, 81);
-    margin: 5PX;
     margin-top: 20px;
     font-size: 20px;
     width: fit-content;
