@@ -1,232 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
 
-*{margin: 0;
-    padding: 0;
-    box-sizing: border-box;};
-    
-    html,body{
-    width: 100%;
-    height: 100%;
-    }
-    
-    body{
-      padding: 5px;
-      margin: 5px;
-    }
-    
-    #pp_div_1,#pp_div_2{
-      background-color: #dfe3f0;
-      width: 100%;
-      font: bold;
-      font-weight: 400;
-      margin: 3px;
-      padding: 6px;
-      border: 2px solid black;
-     font-size: 13PX;
-     font-weight: 900;
-     opacity: 0;
-    }
-    
-    #product-quntity{
-      padding: 10px;
-      font-weight: 800;
-      background-color: rgb(218, 15, 15);
-      margin: 7px;
-      color: #dfe3f0;
-    }
-    
-    input{
-      padding: 3px;
-      font-weight: 800;
-      background-color: rgb(241, 249, 214);
-      margin: 5px;
-    }
-    #mobnover_result{
-      font-weight: 800;
-      background-color: rgb(241, 249, 214);
-    padding: 5px;
-    margin: 0;
-    font-weight: 1000;
-    }
-    #mobbtn{
-      font-weight: 800;
-      background-color: rgb(205, 229, 221);
-    padding: 0;
-    margin: 0px;
-    font-weight: 1000;
-    }
-    .button{
-    font-weight: 1000;
-    padding: 4px;
-    background-color: rgb(255, 55, 0);
-    color: azure;
-    border-radius: 10px;
-    font-size: 25px;
-    }
+</head>
+<body>
 
-    #heding_A{
-      padding: 5PX;
-      border: 2PX solid rgb(0, 0, 0);
-      color: #ffffff;
-      font-weight: 1000;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      background-color: #030303;
-    }
-    
-p{
-    font-weight: 500;
-    font-size: 15px;
+  <!-- product information PAGE -->
+<div id="all_pro_page">
 
-}
 
-.ORDER{
-font-weight: 1000;
-background-color: #ffffff;
-color: #030303;
-padding: 3PX;
-border-radius: 10PX;
-}
+                       <!-- PRODCT INFORMATION -->
+                      <div class="PRODCT_INFORMATION">
+                        <div class="slideshow-container">
 
-    .M_price{
-      font-weight: 1000;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-      }
+                          <div class="mySlidesH1 fade">
+                            <div class="numbertext">1</div>
+                            <img src="H1B.jpeg" alt="h1">
+                            <div class="text">Sample 1</div>
+                          </div>
+                          
+                          <div class="mySlidesH1 fade">
+                            <div class="numbertext">2</div>
+                            <img src="H1C.jpeg" alt="h1">
+                            <div class="text">sample 2</div>
+                          </div>
+                          
+                          <div class="mySlidesH1 fade">
+                            <div class="numbertext">3</div>
+                            <img src="H1A.jpeg" alt="h1">
+                            <div class="text">Sample 3</div>
+                          </div>
+              
+                          <div class="mySlidesH1 fade">
+                              <div class="numbertext">4</div>
+                              <img src="H1D.jpeg" alt="h1">
+                              <div class="text">Sample 4</div>
+                            </div>
+                          
+                            <div class="mySlidesH1 fade">
+                              <div class="numbertext">5</div>
+                              <img src="H1E.jpeg" alt="h1">
+                              <div class="text">Sample 5</div>
+                            </div>
 
-      .O_price{
-        font-weight: 1000;
-      color: rgb(255, 255, 255);
-      font-size: 20px;
-        }
-    
-    select{
-      padding: 3px;
-      font-weight: 800;
-      background-color: rgb(205, 229, 221);
-      margin: 7px;
-    
-    }
-    .opacity_0{
-      opacity: 0;
-      font-size: 0px;
-    }
-    #qr_img{
-      border: 2px solid black;
-      height: 44vh;
-      width: 90%;
-      padding: 1%;
-    }
-    
-    #Payment_gatway1,#Payment_gatway2{
-      border: 2px solid black;
-      color: #dfe3f0;
-      padding: 5px;
-      width: fit-content;
-      font-weight: 1000;
-    margin-top: 5px;
-    }
-    
-    #final_bill_div,.product_name_col{
-      border: 2px solid black;
-      padding: 5px;
-      width: fit-content;
-      background-color: rgb(179, 240, 240);
-      font-weight: 1000;
-    margin-top: 5px;
-    }
-    #finanl_amount{
-      color: black;
-      background-color: #ffffff;
-      color: #ffffff;
-      font-weight: 800;
-      padding: 6px;
-      width: fit-content;
-      
-    }
-    
-    .heding{
-      background-color: #000000;
-      border: 2px solid black;
-      font-weight: 1000;
-      padding: 4px;
-      color: aliceblue;
-    }
-          .PRODCT_INFORMATION{
+                          </div>
+                          <div style="text-align:center">
+                              <span class="dotH1"></span> 
+                              <span class="dotH1"></span> 
+                              <span class="dotH1"></span> 
+                              <span class="dotH1"></span> 
+                              <span class="dotH1"></span>
+                            </div>
+                     
+<button class="btn" value="149">
+  <div>  
+<!-- PRODUCT NAME -->
+  single bed 1 bedsheet + 1 pillow cover .
+<br>
+                            
+ <!-- M PRICE -->
+ 1 PIECE =<S class="M_price">180 RS . </S> 
+                            
+<br>
+                              
+  <!-- DISCOUNT PRICR -->
+ @ discount offer = only <M class="O_price">149 RS .</M> 
+                              
+ <br>
 
-    height: fit-content;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    margin-bottom: 10%;
-    border: 3px solid;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+ <!-- ORDER NOW -->
+ <M class="ORDER">order now 1 PIECE COMBO = 149 RS</M>
+                                
+ </div>                          
+ </button>    
 
-    }
+ <button class="btn" value="299">   
+
+ <div>           
   
-    
-    .div_all_product{
-    background-color: aqua;
-    margin-bottom: 4px;
-    border: 2px solid black;
-    text-align: center; 
-    justify-content: center;
-    height: fit-content;
-    padding: 8px;
-    font-weight: 1000;
-    color: rgb(0, 0, 0);}
-    
+    <!-- PRODUCT NAME -->
+    duble bed 1 bedsheet + 2 pillow cover .
+  
+<br>      
+   <!-- M PRICE -->
+       
+  1 PIECE =<S class="M_price">350 RS . </S> 
+  
+ <br> 
+   <!-- DISCOUNT PRICE -->
+  
+@ discount offer = only <M class="O_price">299 RS .</M>  
+  
+ <br>         
+   <!-- ORDER NOW -->
+  
+   <M class="ORDER">order now  PIECE COMBO = 299 RS</M> 
+  
+</div>   
+</button>  
+  
 
-    .name{
-    background-color: rgb(190, 220, 210);
-    border: 2px solid black;
-    font-size: 20px;
-    font-weight: 1000;
-    margin: 10px;
-    padding: 5px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    }
+                            
+                    
+</div>
+                 
+                    
+
+
+           
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+
+
+  <img src="H2.jpeg" alt="">
+
+
+
+
+
+  <button class="btn" value="98">   
+
+  <div>           
+
+<!-- PRODUCT NAME -->
+Door Mat .
+
+<br>      
+<!-- M PRICE -->
+
+1 PIECE =<S class="M_price">80 RS .</S> 
+
+ <br> 
+<!-- DISCOUNT PRICE -->
+
+@ discount offer = only <M class="O_price">49 RS .</M>  
+
+<br>         
+<!-- ORDER NOW -->
+
+<M class="ORDER">order now  2 PIECES COMBO = 98 RS</M> 
+
+</div>   
+  </button>  
+
+  
+</DIV>
+
+
+
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+
+
+  <img src="H3.jpg" alt="">
+
+ 
+  <button class="btn" value="70">   
+
+    <div>           
+  
+  <!-- PRODUCT NAME -->
+  Chapati / kitchen  Napkins .
+  
+  <br>      
+  <!-- M PRICE -->
+  
+  1 PIECE =<S class="M_price">25 RS . </S> 
+  
+   <br> 
+  <!-- DISCOUNT PRICE -->
+  
+  @ discount offer = only <M class="O_price">14 RS .</M>  
+  
+  <br>         
+  <!-- ORDER NOW -->
+  
+  <M class="ORDER">order now  5 PIECES COMBO = 70 RS</M> 
+  
+  </div>   
+    </button> 
+  
+</DIV>
+
+
+
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+
+             
+<img src="H5.jpg" alt="">
+
+
+
+<button class="btn" value="70">   
+
+  <div>           
+
+<!-- PRODUCT NAME -->
+Small Napkins .
+
+<br>      
+<!-- M PRICE -->
+
+1 PIECE =<S class="M_price">25 RS .</S> 
+
+ <br> 
+<!-- DISCOUNT PRICE -->
+
+@ discount offer = only <M class="O_price">14 RS .</M>  
+
+<br>         
+<!-- ORDER NOW -->
+
+<M class="ORDER">order now 5 PIECES COMBO = 70 RS</M> 
+
+</div>   
+  </button> 
+  
+</DIV>
+
+
+
+
+ <!-- PRODCT INFORMATION -->
+
+ <DIV class="PRODCT_INFORMATION">
+            
+<img src="H6.jpg" alt="H6">
+
+
+<button class="btn" value="95">   
+
+  <div>           
+
+<!-- PRODUCT NAME -->
+big Napkins .
+
+<br>      
+<!-- M PRICE -->
+
+1 PIECE =<S class="M_price">30 RS . </S> 
+
+ <br> 
+<!-- DISCOUNT PRICE -->
+
+@ discount offer = only <M class="O_price">19 RS .</M>  
+
+<br>         
+<!-- ORDER NOW -->
+
+<M class="ORDER">order now 5 PIECES COMBO = 95 RS</M> 
+
+</div>   
+  </button> 
+  
+</DIV>
+
+ 
+
+</div>
+
+<!-- JS PART OF PAY PAGE -->
+<div>
+
+  <div class="opacity_0">
+
+    <div id="pree_id"></div>
+    <div id="last_id"></div>
+    <div id="final_id"></div>
+    <DIV id="today_date"></DIV>
+    <div id="order_del_date"></div>
+    <div id="product_price_result"></div>
+    <div id="product_col">123</div>
+  </div>
+
+<div id="pp_div_1">
+
+  <p>ORDER PRODUCT NAME :-</p>
+
+  <div class="product_name_col" id="product_name_result"></div>
+
+  <BR>
+
+  <p id="heding_A">संपर्कासाठी माहिती भरा :-</p>
+
+  <P>Select product quantity :-
+    <select name="" id="product-quntity">
+        <option value="1">1 SET</option>
+        <option value="2">2 SET</option>
+        <option value="3">3 SET</option>
+    </select>
+  <p>नाव :- <input id="name_result" type="text"></p>
+
+  <p  >गाव निवडा :- 
+    <select name=""  id="addres_result">
+    <option value="rahimatpur">Rahimatpur</option>
+    <option value="boriv">Boriv</option>
+    <option value="Naharwadi">Naharwadi</option>
+    <option value="Other">Other</option>
+    </select>
+
+   <p >संपूर्ण पत्ता लिहा :- 
+   <input id="address_full_result" type="text">
+   </p>
+
+   <BR>
+
+   <p id="mobnopara">व्हॉट्सॲप मोबाईल नंबर :- <input id="mobno_result" type="number"></p></p>
+  
+  </BR>
+
+   <p>वरील मोबाईल नंबर पुन्हा लिहा:- 
+    <button id="mobbtn">
+     <input id="mobnover_result" type="number">
+   </button>
+  </p>
+<BR></BR>
+  <button  class="button" id="secA_btn">view order summary</summary></button>
+
+
+
+</div>
+
+<div id="pp_div_2">
+<div id="L&j&p_DIV">
+      
+    <div id="LEGGINS">
+    <div class="heding">select your leggins colour</div>
+    <BR>
+      <img src="colour_leggins.png" alt="">
+<DIV id="L_1">Select 1st leegins  colour</DIV>
+<select id="leggise_1">
+      <option value="">WHITE  colour</option>
+<option value="">BLACK colour</option>
+<option value="">ORANGE colour</option>
+<option value="">RED  colour</option>
+
+
+<option value="">NAVY BLUE</option>
+<option value="">CREAM colour</option> 
+<option value="">YELLOW colour</option>
+<option value="">GREEN colour</option>
+
+<option value="">PINK  colour</option>
+<option value="">SKIN colour</option> 
+<option value="">BLUE colour</option>
+<option value="">MARRON colour</option>
+   
+</select>
+<div id="L_2">Select 2nd leggins colour</div>
+<select id="leggise_2">
+     <option value="">WHITE  colour</option>
+<option value="">BLACK colour</option>
+<option value="">ORANGE colour</option>
+<option value="">RED  colour</option>
+
+
+<option value="">NAVY BLUE</option>
+<option value="">CREAM colour</option> 
+<option value="">YELLOW colour</option>
+<option value="">GREEN colour</option>
+
+<option value="">PINK  colour</option>
+<option value="">SKIN colour</option> 
+<option value="">BLUE colour</option>
+<option value="">MARRON colour</option>
+   
+</select>
+    </div>
+
+    <div id="JEANS">
+  <div class="heding">select your jeans colour</div>
+  <br>
+<div id="J_1">Select 1st jeans colour</div>
+<select name="" id="jeans_1">
+             <option value="">blue</option>
+             <option value="">grey</option>
+             <option value="">black</option>
+           
+</select>
+
+    </div>
+
+    <div id="Petticoat">
+      <div class="heding">select your Petticoat colour</div>
+      <BR>
+          <img src="colour_petticote.png" alt="Petticoat_1_colour">
+  <DIV id="P_1">Select 1st Petticoat colour</DIV>
+
+
+  <select id="Petticoat_1">
+         <option value="">BLACK colour</option>
+        <option value="">WHITE  colour</option>
+        <option value="">RED  colour</option>
+        <option value="">NAVY BLUE colour</option>
+
+        <option value="">ORANGE colour</option>
+        <option value="">GREEN colour</option>
+        <option value="">SKIN colour</option>
+        <option value="">PINK  colour</option>
+
     
-    
-    img{
-    
-    height: 330px;
-    width: 99%;
-    border: 1px solid black;
-    
-    }
-    .ONE_P_PRICE{
-    background-color: rgb(2, 1, 0);
-    padding: 4PX;
-    font-weight: 900;
-    color: antiquewhite;
-    border: 0.5PX SOLID rgb(164, 148, 148);
-    
-    }
-    .btn{
-      background-color: #000000;
-      color: #ffffff;
-     }
-    
-/* 
-    .btn{ 
-      padding: 5px;
-      padding-TOP: 20PX;
-      padding-bottom: 20PX;
-      background-color: #030303;
-      border-radius: 30px;
-      color: rgb(255, 255, 255);
-      font-weight: 500;
-      border: 3px solid rgb(205, 233, 81);
-    margin-top: 20px;
-    font-size: 20px;
-    width: fit-content;
-justify-content: center;
-text-align: center;
-align-items: center;
-display: flex;
-box-shadow: rgba(106, 106, 139, 0.25) 0px 50px 100px -20px, rgba(189, 101, 101, 0.3) 0px 30px 60px -30px;}
+        <option value="">BLUE colour</option>
+        <option value="">CREAM colour</option>              
+        <option value="">SKY BLUE colour</option>                  
+        <option value="">YELLOW colour</option>
+        <option value="">MARRON colour</option>
+     
+  </select>
+  <div id="P_2">Select 2nd Petticoat colour</div>
+  <select id="Petticoat_2">
+      <option value="">BLACK colour</option>
+      <option value="">WHITE  colour</option>
+      <option value="">RED  colour</option>
+      <option value="">NAVY BLUE colour</option>
+
+      <option value="">ORANGE colour</option>
+      <option value="">GREEN colour</option>
+      <option value="">SKIN colour</option>
+      <option value="">PINK  colour</option>
+
+  
+      <option value="">BLUE colour</option>
+      <option value="">CREAM colour</option>              
+      <option value="">SKY BLUE colour</option>                  
+      <option value="">YELLOW colour</option>
+      <option value="">MARRON colour</option>
+     
+  </select>
+  <div id="P_3">आमची टीम तुम्ही निवडलेला कलर देण्याचा 100% प्रयत्न करेल पण जर स्टोरेज मध्ये वरील 2 कलर नसतील तर तुम्ही कोणता कलर घेऊ इच्छिता.</div>
+  <select id="Petticoat_3">
+      <option value="">BLACK colour</option>
+      <option value="">WHITE  colour</option>
+      <option value="">RED  colour</option>
+      <option value="">NAVY BLUE colour</option>
+
+      <option value="">ORANGE colour</option>
+      <option value="">GREEN colour</option>
+      <option value="">SKIN colour</option>
+      <option value="">PINK  colour</option>
+
+  
+      <option value="">BLUE colour</option>
+      <option value="">CREAM colour</option>              
+      <option value="">SKY BLUE colour</option>                  
+      <option value="">YELLOW colour</option>
+      <option value="">MARRON colour</option>
+  
+  </select>
+  
+      </div>
+ </div>
+
+  <div id="name_and_address_sumury"></div>
+  <br>
+  <div id="colour_last_div">
+    <div id="col_last_1"></div>
+    <div id="col_last_2"></div>
+    <div id="col_last_3"></div>
+   </div>
+
+
+
+  <div id="final_bill_div">
+<div  id="final_bill"></div>
+<br>
+<div id="finanl_amount"></div>
+</BR>
+</div>
+
+<DIV id="Payment_gatway1"></DIV>
+</BR>
+<img id="qr_img" src="qr.jpeg" alt="qr.jpg">
+</BR>
+<DIV id="Payment_gatway2"></DIV>
+</BR>
+<div id="id_input" >Enter UPI transactiion id last 4 digit
+  <input  id="transaction_id" value="" type="number">
+ </div>
+ <br>
+
+
+
+</BR>
+<div>तुम्ही 20% ची बचत केली त्याबद्दल अभिनंदन. </BR>
+  पेमेंट झाल्या नंतर -Submit- या बटन वर क्लिक करा.</BR>
+  क्लिक केल्या नंतर  तुम्ही  व्हाट्सअप मध्ये जाल.</BR>
+ व्हाट्सअप मध्ये SEND SMS करा तुम्हाला व्हाट्सअप वर तुम्हाला तुमचा 1 ऑर्डर आयडी भेटेल.</BR>
+ आयडी भेटल्या नंतर तुमची ऑर्डर आमच्या टीम ला भेटेल.
+ ऑर्डर ची माहिती तपासून आमची टीम तुम्हाला ऑर्डर कन्फर्म असा SMS करेल आणि तुमची आर्डर कन्फर्म होईल.नंतर
+ आमची टीम तुमची ऑर्डर तुम्हाला लवकरच पाठवेल.
+<div id="chak_mark"></div></div>
+
+ <button class="button" id="gotowhatsapp">-Submit-</button>
+</div>
+
+</div>
+
+
+  <!-- product photo change function -->
+<script src="script_photo.js"></script>
+  <!-- product payment pay function -->
+<script src="script.js"></script>
+</body>
+</html>
+
