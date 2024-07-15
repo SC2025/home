@@ -91,14 +91,14 @@ border-radius: 10PX;
 
     .M_price{
       font-weight: 1000;
-    color: red;
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
       }
 
       .O_price{
         font-weight: 1000;
       color: rgb(255, 255, 255);
-      font-size: 30px;
+      font-size: 20px;
         }
     
     select{
@@ -207,9 +207,13 @@ border-radius: 10PX;
     border: 0.5PX SOLID rgb(164, 148, 148);
     
     }
-    
-
     .btn{
+      background-color: #000000;
+      color: #ffffff;
+     }
+    
+/* 
+    .btn{ 
       padding: 5px;
       padding-TOP: 20PX;
       padding-bottom: 20PX;
