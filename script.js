@@ -1,3 +1,8 @@
+document.addEventListener("contextmenu",function(e){
+  e.preventDefault()
+},false
+)
+
 setTimeout(() => {
   alert(`प्रोड्कट आर्डर साठी फोटो खालील ब्लॅक कलर चे बटन आहेत ;
     तुम्हाला कोणत्या साईझ चा प्रोड्कट घेयचा आहे त्या नुसार त्या 
