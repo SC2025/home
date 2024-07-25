@@ -14,7 +14,18 @@
   }
   
 .heding_B{
+  padding: 2PX;
+  border: 1PX solid rgb(0, 0, 0);
   color: #ffffff;
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #030303;
+  margin-top: 10PX;
+  margin-bottom: 3PX;
+  font-size: 15PX;
 }
 
   #pp_div_1,#pp_div_2{
