@@ -1,4 +1,7 @@
-
+document.addEventListener("contextmenu",function(e){
+  e.preventDefault()
+},false
+);
 
 
 
@@ -14,10 +17,6 @@ for (let i = 0; i < ORDER_TIME.length; i++) {
 };
 
 
-document.addEventListener("contextmenu",function(e){
-  e.preventDefault()
-},false
-);
 
 setTimeout(() => {
   alert(`प्रोड्कट आर्डर साठी फोटो खालील ब्लॅक कलर चे बटन आहेत ;
