@@ -205,7 +205,7 @@ document.getElementById("secA_btn").addEventListener("click",function () {
   if (name_p.value == "") {
  alert("dear customer कृपया नाव लिहा");
  name_p.style.backgroundColor = "rgb(239, 118, 118)";
-}
+}                                                          
 else if(fulladdress_p.value == ""){
 alert(`${name_p.value}
 कृपया संपूर्ण पत्ता लिहा`);
@@ -219,8 +219,9 @@ else if(city_city_p.value == "Other"){
    जर तुम्हाला शक्य असेल तर
    तुमच्या विश्वासू मित्राचा किंवा नातेवाईकाचा पत्ता द्या.
     "Full detail Address:-" मध्ये पत्ता नीट लिहा जेणे करून आमची टीम तुमचे product घेऊन लवकर येईल`);
-    city_city_p.style.backgroundColor = "rgb(239, 118, 118)";
-}
+    document.getElementById("city").style.backgroundColor = "red";
+    document.getElementById("city").style.color = "white";
+  }
 else if(whatsappno_p.value == ""){
 alert(
   `${ name_p.value} 
