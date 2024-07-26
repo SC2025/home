@@ -156,8 +156,10 @@ border-radius: 10PX;
     align-items: center;
   height: fit-content;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  border: 3px solid black;
   margin-bottom: 10%;
+  padding: 3PX;
+  border-radius: 15PX;
   }
 
 
